@@ -1,0 +1,50 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login | Kent Roleplay</title>
+</head>
+<body>
+  <header class="header-container">
+    <div class="logo">KENT STAFF</div>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="careerlogin.html">Database</a></li>
+        <li><a href="application.html">Applications</a></li>
+        <li><a href="devlogin.html">Development Staff</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="button" onclick="authenticate()">Login</button>
+    </form>
+    <p id="error-message" style="color: red;"></p>
+  </div>
+
+  <script>
+    function authenticate() {
+      // Get the values entered by the user
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Display the username and password (you can replace this with your authentication logic)
+      alert("Username: " + username + "\nPassword: " + password);
+    }
+  </script>
+
+  <script src="careerstaff.js"></script>
+</body>
+</html>
